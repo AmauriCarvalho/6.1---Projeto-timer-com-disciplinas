@@ -1,0 +1,13 @@
+<h2>Disciplinas</h2>
+<div>
+    <input #input type="text">
+    <button (click)="this.disci.add(input.value); input.value='';">adicionar</button>
+</div>
+<ul>
+  <li *ngFor="let disc of this.disci.getList(), index as i">
+    {{disc.title}}
+    <button (click)="this.disci.remove(i)" style="cursor: pointer">
+    X
+    </button>
+  </li>
+</ul>
