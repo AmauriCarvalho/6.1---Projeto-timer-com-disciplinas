@@ -9,7 +9,7 @@ import {TimerService} from '../timer.service';
 export class HomeComponent implements OnInit {
 
   constructor(public timer:TimerService){
-    this.timer.start(1000);
+    this.timer.comeco();
   }
 
   ngOnInit() {

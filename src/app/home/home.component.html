@@ -1,14 +1,14 @@
 <h3>Cronômetro em segundos</h3>
 <p>
 Começo em:
-<input type="number" [(ngModel)]="timer.c">
+<input type="number">
 </p>
 <p>
 Parar em:
-<input type="number" [(ngModel)]="timer.f">
+<input type="number">
 </p>
 
-<button (click)="timer.start(1000)">Start</button>
-<button (click)="timer.stop()">Stop</button>
+<button (click)="timer.comeco()">Start</button>
+<button (click)="timer.parar()">Stop</button>
 <br>
 {{timer.getCount()}}s
